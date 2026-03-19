@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa...</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: gray;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        } 
+    </style>
+
+</head>
+<body>
+    <h1>Olá, Mundo !</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        //window.prompt sempre retorna uma string, mesmo digitando numero
+        var n1 = Number(window.prompt('Digite um numero: ')) //string
+        var n2 = Number(window.prompt('Digite outro numero: ')) //string
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + String(soma))
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
