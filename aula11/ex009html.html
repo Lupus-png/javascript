@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR ou Gringo?</title>
+</head>
+<body>
+    <h1>Verificação de Nascionalidade</h1>
+    Em qual pais você nasceu? <input type="text" name="txtnasc" id="txtnasc">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var nasc = window.document.getElementById('txtnasc')
+            var res = window.document.getElementById('res')
+            var pais = nasc.value
+
+            res.innerHTML = `<p>Você nasceu no ${pais}</p>`
+
+            if (pais.toLowerCase() == `brasil`) {
+                res.innerHTML += `<p>Você é Brasileiro!!</p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
