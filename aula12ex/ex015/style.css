@@ -35,6 +35,15 @@ div {
     padding: 5px 10px;
 }
 
+#foto{ 
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0px auto;
+    object-fit: cover;
+}
+
 footer {
     padding: 20px;
     color: white;

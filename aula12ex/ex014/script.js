@@ -3,11 +3,11 @@ function carregar() {
     var imagem = window.document.getElementById('imagem')
 
     var data = new Date()
-    var hora = data.getHours()
+    var hora = data.getHours()    /* Coletando as horas do dia */
 
-    msg.innerHTML = `Agora são ${hora} horas`
+    msg.innerHTML = `Agora são ${hora} horas`    /* Exibindo as horas */
 
-    if (hora >= 0 && hora < 12) {
+    if (hora >= 0 && hora < 12) {     /* Separando por periodos */
         imagem.src = 'Manhã.jpg'
         document.body.style.background = '#a4d9e5'
     } else if (hora >= 12 && hora < 18) {
