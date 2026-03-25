@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <label for="nasctxt">Ano de Nascimento: <input type="number" name="nasctxt" id="nasctxt" placeholder=" 2000"></label>
+        </div>
+
+        <div>
+            <label for="sexomas">Sexo: <input type="radio" name="sexo" id="sexomas" checked> Masculino</label>
+            <label for="sexofem"><input type="radio" name="sexo" id="sexofem"> Feminino</label>
+        </div>
+
+        <div><input type="button" value="Verificar" id="button" onclick="verificar()"></div>
+
+        <div id="msg"><p>Preencha os dados acima para ver o resultado!</p></div>
+
+        <div id="foto"></div>
+    </section>
+    <footer>
+        <p>@ Lupus-png</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
