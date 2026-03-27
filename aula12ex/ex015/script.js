@@ -41,6 +41,6 @@ function verificar() {
         
         msg.style.textAlign = 'center'
         msg.innerHTML = `Detectamos ${genero} com ${idade} anos.`    /* mensagem na tela */
-        msg.appendChild(img) /* adicionar elemento */
+        msg.appendChild(img) /* adicionar elemento 'img'*/
     }
 }
